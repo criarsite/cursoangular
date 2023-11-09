@@ -153,7 +153,8 @@ let listroConsumidos = distancia / kmPorLitro
    //Calculo IMC 
 let peso = 75
 let altura = 1.75
-let IMC = peso / (altura * altura)
+//let IMC = peso / (altura * altura)
+let IMC = peso / Math.pow(altura,2)
 
 console.log(IMC)
 if (IMC <18.5){
@@ -168,3 +169,21 @@ if (IMC <18.5){
     console.log("Obesidade grave")
 }
 
+let precoEtiqueta = 100
+let pagamento = 3
+let juros = precoEtiqueta *0.1
+ 
+
+
+if (pagamento ===1 ){
+       console.log(precoEtiqueta - (precoEtiqueta *0.1) )
+}else if (pagamento === 2){
+    console.log(precoEtiqueta - (precoEtiqueta *0.15) )
+} else if(pagamento === 3){
+    console.log(precoEtiqueta + juros )
+} else {
+    console.log("Opcao invalida")
+}
+
+
+ 
